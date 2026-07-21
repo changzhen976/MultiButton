@@ -3,8 +3,7 @@
 #   - Otherwise: standard CMake library with optional examples/tests
 if(DEFINED ENV{IDF_PATH})
     idf_component_register(SRCS "multi_button.c"
-                        INCLUDE_DIRS "."
-                        REQUIRES driver)
+                        INCLUDE_DIRS ".")
 else()
     cmake_minimum_required(VERSION 3.10)
     project(MultiButton VERSION 1.1.1 LANGUAGES C)
